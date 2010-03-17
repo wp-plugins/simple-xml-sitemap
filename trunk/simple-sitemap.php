@@ -84,13 +84,13 @@ if(isset($_POST['build'])){
 		<?php if(get_option('zip'))echo ' checked="checked" ' ?>
 		/></label></li>
 		<li><label>Ping Google? <input type="checkbox" name="ping"
-		<?php if(get_option('ping'))echo ' checked="checked" ' ?>
+		<?php if(get_option('google'))echo ' checked="checked" ' ?>
 		/></label></li>
 		<li><label>Ping Ask.com? <input type="checkbox" name="ping"
-		<?php if(get_option('ping'))echo ' checked="checked" ' ?>
+		<?php if(get_option('ask'))echo ' checked="checked" ' ?>
 		/></label></li>
 		<li><label>Ping Bing? <input type="checkbox" name="ping"
-		<?php if(get_option('ping'))echo ' checked="checked" ' ?>
+		<?php if(get_option('bing'))echo ' checked="checked" ' ?>
 		/></label></li>
 		
 		<li><label>Filename <input type="text" name="ping" value="<?php echo get_option('filename'); ?>" /></label></li>
