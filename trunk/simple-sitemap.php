@@ -9,10 +9,10 @@ Author URI: http://blog.greg-dev.com
 License: GPL2
 */
 add_action('admin_menu', 'sitemap_create_menu');
-add_action('delete_post', array('sitemap', 'build'));	
-add_action('publish_post', array('sitemap', 'build'));	
-add_action('publish_page', array('sitemap', 'build'));	
-add_action('sm_build_cron', array('sitemap', 'build'));
+add_action('delete_post', array('sitemap', 'build',100,1));	
+add_action('publish_post', array('sitemap', 'build',100,1));	
+add_action('publish_page', array('sitemap', 'build',100,1));	
+add_action('sm_build_cron', array('sitemap', 'build',100,1));
 
 function sitemap_create_menu() {
 	add_options_page('Sitemap', 'Sitemap Settings', 'administrator', __FILE__, 'sitemap_settings_page','', __FILE__);
