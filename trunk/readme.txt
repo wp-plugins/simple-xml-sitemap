@@ -18,12 +18,12 @@ This plugin will generate an XML sitemap of your WordPress blog and ping the fol
 
 
 == Frequently Asked Questions ==
-
+No FAQ yet.
 
 
 == Screenshots ==
 
-
+No screenshots available.
 
 == Changelog ==
 = 0.1.1 =
@@ -32,4 +32,3 @@ Bugs fixed.
 = 0.1 =
 == Upgrade Notice ==
 
-`
