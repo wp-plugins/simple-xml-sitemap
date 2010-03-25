@@ -67,8 +67,8 @@ class sitemap
 	}else $filename = $filename.'.xml';
 	$filename = get_option('siteurl').'/'.$filename;
 	if(get_option('google'))$this->ping_google($filename);
-	if(get_option('ask'))$this->ping_google($filename);
-	if(get_option('bing'))$this->ping_google($filename);
+	if(get_option('ask'))$this->ping_ask($filename);
+	if(get_option('bing'))$this->ping_bing($filename);
         return '<p>Memory usage:'.($mem_end - $mem_start).' Mbyte<br />
 		    Build time:'.($this->get_microtime()-$this->starttime).' sec
 		</p>';
