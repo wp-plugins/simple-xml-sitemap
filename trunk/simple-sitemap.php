@@ -3,7 +3,7 @@
 Plugin Name: Simple XML Sitemap
 Plugin URI: http://blog.greg-dev.com
 Description: This plugin will generate an XML sitemap of your WordPress blog and ping the following search engines: Ask.com, Google, Bing. <a href="options-general.php?page=sitemap.php">Configuration Page</a>
-Version: 0.1.1
+Version: 0.1.2
 Author: Greg Molnar
 Author URI: http://blog.greg-dev.com
 License: GPL2
@@ -70,7 +70,7 @@ if(isset($_POST['build'])){
 	$filename = get_option('filename');
 	if(file_exists(ABSPATH.'/'.$filename.'.xml')){
 	$lastbuild = filemtime(ABSPATH.'/'.$filename.'.xml');
-	echo '<p>Your sitemap has built:'.date_i18n('Y.m.d h:i:s',$lastbuild).'</p>';
+	echo '<p><strong>Your sitemap has built:</strong>'.date_i18n('Y.m.d h:i:s',$lastbuild).'</p>';
 	}
 }
 ?>
