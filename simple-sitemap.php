@@ -16,8 +16,6 @@ function build()
         $s->build();
 }
 add_action('admin_menu', 'sitemap_create_menu');
-
-add_action('delete_post',  'build',100,1);
 add_action('${new_status}_$post->post_type','build',100,1);
 add_action('sm_build_cron', 'build',100,1);
 
