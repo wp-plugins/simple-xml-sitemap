@@ -26,15 +26,6 @@ No FAQ yet.
 No screenshots available.
 
 == Changelog ==
-= 1.1 =
-Bugs fixed.
-= 1.0 =
-Bugs fixed.
-= 0.1.2 =
-Bugs fixed.
-= 0.1.1 =
-Bugs fixed.
 
-= 0.1 =
 == Upgrade Notice ==
 
