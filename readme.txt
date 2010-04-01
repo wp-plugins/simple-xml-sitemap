@@ -3,7 +3,7 @@ Contributors: Greg Molnar
 Tags: sitemap
 Requires at least: 2.3
 Tested up to: 2.9.2
-Stable tag: 1.1
+Stable tag: 1.2
 
 This plugin will generate an XML sitemap of your WordPress blog and ping the following search engines: Ask.com, Google, Bing.
 
