@@ -63,7 +63,7 @@ class sitemap
         file_put_contents(ABSPATH.'/'.$filename.'.xml',$output);
         if(get_option('zip')){
 	    $this->gzip_sitemap($filename,$output);
-	    $filename = $filename.'.xml.gzip';
+	    $filename = $filename.'.xml.gz';
 	}else $filename = $filename.'.xml';
 	$filename = get_option('siteurl').'/'.$filename;
 	if(get_option('google'))$this->ping_google($filename);
