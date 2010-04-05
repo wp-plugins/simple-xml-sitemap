@@ -5,7 +5,8 @@ Plugin URI: http://blog.greg-dev.com
 Description: This plugin will generate an XML sitemap of your WordPress blog and ping the following search engines: Ask.com, Google, Bing. <a href="options-general.php?page=sitemap.php">Configuration Page</a>
 Version: 1.2
 Author: Greg Molnar
-Author URI: http://blog.greg-dev.com
+Author URI: http://blog.greg-dev.com/
+Plugin URI: http://blog.greg-dev.com/wordpress/wordpress-sitemap-plugin/
 License: GPL2
 */
 
@@ -38,7 +39,7 @@ function register_mysettings() {
 			  );
         foreach($settings as $setting => $value){
             register_setting( 'sitemap-settings-group', $setting );
-	    if(get_option($setting) == ''){        
+	    if(get_option($setting) == ''){
 		update_option( $setting, $value );
 	    }
         }     
