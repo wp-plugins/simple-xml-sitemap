@@ -76,7 +76,7 @@ class sitemap
     
     function gzip_sitemap($filename,$data)
     {
-	file_put_contents(ABSPATH.'/'.$filename.'.xml.gzip',gzdeflate($data));
+	file_put_contents(ABSPATH.'/'.$filename.'.xml.gz',gzdeflate($data));
     }
    
     function ping_google($url)
